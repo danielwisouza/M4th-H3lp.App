@@ -1,5 +1,5 @@
 {
-  "name": "Tabs Starter",
+  "name": "Sidemenu Starter",
   "baseref": "master",
   "tarignore": [
     ".sourcemaps",
