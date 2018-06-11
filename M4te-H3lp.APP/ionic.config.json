@@ -1,8 +1,0 @@
-{
-  "name": "M4te-H3lp.APP",
-  "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
-}
