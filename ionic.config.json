@@ -1,0 +1,8 @@
+{
+  "name": "M4te-help.App",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

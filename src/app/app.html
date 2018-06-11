@@ -1,0 +1,38 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Navegação</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list> 
+        <button ion-button icon-left full large color="primary" clear><ion-icon name="home"></ion-icon>
+          Home
+        </button>
+        <button ion-button icon-left full large color="secondary" clear><ion-icon name="calculator"></ion-icon>
+          Teste Lógico
+        </button>
+        <button ion-button icon-left full large color="dark" clear><ion-icon name="logo-youtube"></ion-icon>
+          Video Aulas
+        </button>
+        <button ion-button icon-left full large color="dark" clear><ion-icon name="clipboard"></ion-icon>
+          Sobre
+        </button>
+        
+        
+        
+    </ion-list>
+    <ion-toolbar>
+        <button ion-button icon-left full large color="danger" clear><ion-icon name="close-circle"></ion-icon>
+          Sair
+        </button>
+      </ion-toolbar>
+  </ion-content>
+  
+
+  
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
