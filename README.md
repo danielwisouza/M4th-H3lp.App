@@ -10,5 +10,5 @@ Desenvolver um programa MObille para auxiliar Jovens crianças e adultos a resol
 Veja [Installation](Installation.md) page.
 
 ## Telas
-<img align="center" src="src/assets/imgs/logo-Slyle.png" alt="Imagem" width="265"/>
+<img align="center" src="src/assets/imgs/mockup.png" alt="Imagem" width="265"/>
 
