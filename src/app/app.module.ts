@@ -8,6 +8,10 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { TesteLogicoPageModule } from '../pages/teste-logico/teste-logico.module';
+import { QuizPageModule } from '../pages/quiz/quiz.module';
+import { SobrePageModule } from '../pages/sobre/sobre.module';
+import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    TesteLogicoPageModule,
+    QuizPageModule,
+    SobrePageModule,
+    VideoAulaPageModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    
   ],
   providers: [
     StatusBar,
