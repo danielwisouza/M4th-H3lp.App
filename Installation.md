@@ -12,6 +12,6 @@
 4. Com git instalado vamos abrir a pasta onde queremos salvar o projeto com Git Bash, na interface digitar "git clone https://github.com/danielwisouza/M4th-H3lp.App.git "
 5. Vamos agora executar o projeto IONIC no CMD.
 - ATENÇÃO: Temos que estar na pasta do projeto, cd C:/"caminho"/M4th-H3lp.App
-6. Agora na pasta correta executar o seguinte comando ####ionic serve
+6. Agora na pasta correta executar o seguinte comando <h1>ionic serve</h1>
 
 ###
