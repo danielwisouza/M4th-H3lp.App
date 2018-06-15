@@ -7,14 +7,38 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
     <ion-row>
         <ion-col text-center>
             <h4>Bem vindo(a) ao M4te H3lp !!</h4>
         </ion-col>
       </ion-row>
-      <img src="../../assets/images/logo_home.png" width="100%" height="85%">
-      
+        <button ion-button icon-left full large color="primary" block (click)="openPageTesteLogico()">
+          <ion-icon name="calculator"></ion-icon>
+          Teste Lógico
+        </button>
+        <button ion-button icon-left full large color="secondary" block (click)="openPageQuiz()">
+          <ion-icon name="game-controller-b"></ion-icon>
+            Quiz 
+          </button>
+        <button ion-button icon-left full large color="dark" block (click)="openPageVideoAula()">
+          <ion-icon name="logo-youtube"></ion-icon>
+          Video Aulas
+        </button>
+        <button ion-button icon-left full large color="light" block (click)="openPageSobre()">
+          <ion-icon name="clipboard"></ion-icon>
+          Sobre
+        </button>
+        <button ion-button icon-left full large color="danger" block >
+          <ion-icon name="close-circle"></ion-icon>
+          Sair
+        </button>
+        <ion-footer>
+          <ion-toolbar>
+              <div class="header padding text-center">
+                  <img src="../../assets/images/logo1.png">
+              </div> 
+          </ion-toolbar>
+        </ion-footer>
 </ion-content>
 
