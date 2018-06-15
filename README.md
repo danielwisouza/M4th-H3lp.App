@@ -1,4 +1,4 @@
-# Projeto M4th H3lp App - Auxiliador de Matemático
+# Projeto M4th H3lp App - Auxiliador Matemático
 Projeto disciplina de Laboratório de Programação ll - FATEC
 
 ## Objetivo do Aplicativo
