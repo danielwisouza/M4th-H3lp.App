@@ -4,40 +4,44 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title text-center>Página Principal</ion-title>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding>
     <ion-row>
         <ion-col text-center>
-            <h4>Bem vindo(a) ao M4te H3lp !!</h4>
+            <h3>Bem-vindo ao M4te H3lp !!</h3>
         </ion-col>
       </ion-row>
-        <button ion-button icon-left full large color="primary" block (click)="openPageTesteLogico()">
+      
+        <button ion-button icon-left full color="primary" block (click)="openPageTesteLogico()">
           <ion-icon name="calculator"></ion-icon>
           Teste Lógico
         </button>
-        <button ion-button icon-left full large color="secondary" block (click)="openPageQuiz()">
+        <button ion-button icon-left full color="secondary" block (click)="openPageQuiz()">
           <ion-icon name="game-controller-b"></ion-icon>
             Quiz 
           </button>
-        <button ion-button icon-left full large color="dark" block (click)="openPageVideoAula()">
+        <button ion-button icon-left full color="dark" block (click)="openPageVideoAula()">
           <ion-icon name="logo-youtube"></ion-icon>
           Video Aulas
         </button>
-        <button ion-button icon-left full large color="light" block (click)="openPageSobre()">
+        <button ion-button icon-left full color="twitter" block (click)="openPageSobre()">
           <ion-icon name="clipboard"></ion-icon>
           Sobre
         </button>
-        <button ion-button icon-left full large color="danger" block >
+        <button ion-button icon-left full color="danger" block >
           <ion-icon name="close-circle"></ion-icon>
           Sair
         </button>
         <ion-footer>
           <ion-toolbar>
-              <div class="header padding text-center">
-                  <img src="../../assets/images/logo1.png">
-              </div> 
+              <ion-row>
+              <ion-col text-center>
+                  <img src="../../assets/images/logo1.png" style="align-items: center">
+              </ion-col>
+            </ion-row>
           </ion-toolbar>
         </ion-footer>
 </ion-content>
