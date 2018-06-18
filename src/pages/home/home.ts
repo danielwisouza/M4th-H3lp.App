@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { TesteLogicoPage } from '../teste-logico/teste-logico';
 import { QuizPage } from '../quiz/quiz';
 import { VideoAulaPage } from '../video-aula/video-aula';
-import { SobrePage } from '../sobre/sobre';
+import { IntoPage } from '../into/into';
 
 @Component({
   selector: 'page-home',
@@ -14,21 +14,17 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  openPageHome(){
-    this.navCtrl.setRoot(HomePage);
-  }
-
   openPageTesteLogico() {
-    this.navCtrl.setRoot(TesteLogicoPage);
+    this.navCtrl.push(TesteLogicoPage);
   }
   openPageQuiz() {
-    this.navCtrl.setRoot(QuizPage);
+    this.navCtrl.push(QuizPage);
   }
   openPageVideoAula() {
-    this.navCtrl.setRoot(VideoAulaPage);
+    this.navCtrl.push(VideoAulaPage);
   }
   openPageSobre() {
-    this.navCtrl.setRoot(SobrePage);
+    this.navCtrl.push(IntoPage);
   }
 
   //Aqui está o botão sair

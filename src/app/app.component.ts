@@ -7,7 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { QuizPage } from '../pages/quiz/quiz';
 import { TesteLogicoPage } from '../pages/teste-logico/teste-logico';
 import { VideoAulaPage } from '../pages/video-aula/video-aula';
-import { SobrePage } from '../pages/sobre/sobre';
+import { IntoPage } from '../pages/into/into';
 
 
 @Component({
@@ -18,7 +18,7 @@ import { SobrePage } from '../pages/sobre/sobre';
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage: any = HomePage;
+  rootPage: any = IntoPage;
   
 
   pages: Array<{title: string, component: any}>;
@@ -46,8 +46,6 @@ export class MyApp {
   openPageVideoAula() {
     this.nav.setRoot(VideoAulaPage);
   }
-  openPageSobre() {
-    this.nav.setRoot(SobrePage);
-  }
+
 
 }

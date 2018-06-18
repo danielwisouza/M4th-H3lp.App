@@ -9,8 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TesteLogicoPageModule } from '../pages/teste-logico/teste-logico.module';
 import { QuizPageModule } from '../pages/quiz/quiz.module';
-import { SobrePageModule } from '../pages/sobre/sobre.module';
 import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
+import { IntoPageModule } from '../pages/into/into.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +23,8 @@ import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
     IonicModule.forRoot(MyApp),
     TesteLogicoPageModule,
     QuizPageModule,
-    SobrePageModule,
     VideoAulaPageModule,
+    IntoPageModule,
     
   ],
   bootstrap: [IonicApp],
