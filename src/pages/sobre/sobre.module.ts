@@ -5,9 +5,12 @@ import { SobrePage } from './sobre';
 @NgModule({
   declarations: [
     SobrePage,
+    
   ],
   imports: [
     IonicPageModule.forChild(SobrePage),
   ],
 })
 export class SobrePageModule {}
+
+

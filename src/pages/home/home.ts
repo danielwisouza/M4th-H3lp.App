@@ -31,6 +31,9 @@ export class HomePage {
     this.navCtrl.setRoot(SobrePage);
   }
 
-
+  //Aqui está o botão sair
+  thisClose(){
+    this.navCtrl.pop ();
+  }
 }
 

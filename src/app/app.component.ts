@@ -12,10 +12,14 @@ import { SobrePage } from '../pages/sobre/sobre';
 
 @Component({
   templateUrl: 'app.html'
+  
+  
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage: any = HomePage;
+  
 
   pages: Array<{title: string, component: any}>;
 
