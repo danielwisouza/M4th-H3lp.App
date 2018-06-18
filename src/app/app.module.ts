@@ -11,6 +11,9 @@ import { TesteLogicoPageModule } from '../pages/teste-logico/teste-logico.module
 import { QuizPageModule } from '../pages/quiz/quiz.module';
 import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
 import { IntoPageModule } from '../pages/into/into.module';
+import { QuestoesTestePage } from '../pages/questoes-teste/questoes-teste';
+import { QuestoesQuizPageModule } from '../pages/questoes-quiz/questoes-quiz.module';
+import { QuestoesTestePageModule } from '../pages/questoes-teste/questoes-teste.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { IntoPageModule } from '../pages/into/into.module';
     QuizPageModule,
     VideoAulaPageModule,
     IntoPageModule,
+    QuestoesQuizPageModule,
+    QuestoesTestePageModule,
     
   ],
   bootstrap: [IonicApp],

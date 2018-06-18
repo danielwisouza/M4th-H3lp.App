@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { AlertController } from 'ionic-angular';
+import { QuestoesTestePage } from '../questoes-teste/questoes-teste';
 /**
  * Generated class for the TesteLogicoPage page.
  *
@@ -15,11 +16,33 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TesteLogicoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TesteLogicoPage');
   }
+  showAlert() {
+    const confirm = this.alertCtrl.create({
+      title: 'Alerta início do Teste',
+      message: 'Olá, o teste está prestes a começar, Deseja realmente continuar?',
+      buttons: [
+        {
+          text: 'Sim',
+          handler: () => {
+          this.navCtrl.push(QuestoesTestePage);
+          }
+        },
+        {
+          text: 'Não',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present();
 
+  }
 }
+
