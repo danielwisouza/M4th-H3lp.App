@@ -21,5 +21,7 @@ export class QuestoesQuizPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuestoesQuizPage');
   }
-
+  public dados(contagem){
+    contagem=contagem+1;
+  }
 }

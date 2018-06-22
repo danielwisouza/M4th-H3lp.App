@@ -25,7 +25,7 @@ export class QuizPage {
   showConfirm() {
     const confirm = this.alertCtrl.create({
       title: 'Alerta inicio do Quiz',
-      message: 'O Quiz esta preste a iniciar, Deseja continuar?',
+      message: 'O Quiz já vai começar, Deseja continuar?',
       buttons: [
         {
           text: 'Sim',

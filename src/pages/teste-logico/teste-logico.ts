@@ -25,7 +25,7 @@ export class TesteLogicoPage {
   showAlert() {
     const confirm = this.alertCtrl.create({
       title: 'Alerta início do Teste',
-      message: 'Olá, o teste está prestes a começar, Deseja realmente continuar?',
+      message: 'Atenção a teste já vai começar, Deseja realmente continuar?',
       buttons: [
         {
           text: 'Sim',
