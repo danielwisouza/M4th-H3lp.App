@@ -12,8 +12,6 @@ import { IntoPage } from '../pages/into/into';
 
 @Component({
   templateUrl: 'app.html'
-  
-  
 })
 
 export class MyApp {
@@ -46,6 +44,4 @@ export class MyApp {
   openPageVideoAula() {
     this.nav.setRoot(VideoAulaPage);
   }
-
-
 }
