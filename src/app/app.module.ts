@@ -13,6 +13,7 @@ import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
 import { IntoPageModule } from '../pages/into/into.module';
 import { QuestoesQuizPageModule } from '../pages/questoes-quiz/questoes-quiz.module';
 import { QuestoesTestePageModule } from '../pages/questoes-teste/questoes-teste.module';
+import { MoovieProvider } from '../providers/moovie/moovie';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { QuestoesTestePageModule } from '../pages/questoes-teste/questoes-teste.
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MoovieProvider
   ]
 })
 export class AppModule {}
