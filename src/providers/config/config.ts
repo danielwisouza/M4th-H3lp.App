@@ -14,7 +14,7 @@ export class ConfigProvider {
   }
 
   //Recupera dados do localstorage
-  getConfigDate():any{
+  getConfigDate(): any{
     return localStorage.getItem(config_key_name);
   }
 

@@ -28,15 +28,15 @@ export class TesteLogicoPage {
       message: 'Atenção a teste já vai começar, Deseja realmente continuar?',
       buttons: [
         {
-          text: 'Sim',
-          handler: () => {
-          this.navCtrl.push(QuestoesTestePage);
-          }
-        },
-        {
           text: 'Não',
           handler: () => {
             console.log('Agree clicked');
+          }
+        },
+        {
+          text: 'Sim',
+          handler: () => {
+          this.navCtrl.push(QuestoesTestePage);
           }
         }
       ]

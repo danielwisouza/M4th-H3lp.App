@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicApp } from 'ionic-angular';
 import { TesteLogicoPage } from '../teste-logico/teste-logico';
 import { QuizPage } from '../quiz/quiz';
 import { VideoAulaPage } from '../video-aula/video-aula';

@@ -28,15 +28,15 @@ export class QuizPage {
       message: 'O Quiz já vai começar, Deseja continuar?',
       buttons: [
         {
-          text: 'Sim',
-          handler: () => {
-            this.navCtrl.push(QuestoesQuizPage);
-          }
-        },
-        {
           text: 'Não',
           handler: () => {
             console.log('Agree clicked');
+          }
+        },
+        {
+          text: 'Sim',
+          handler: () => {
+            this.navCtrl.push(QuestoesQuizPage);
           }
         }
       ]
