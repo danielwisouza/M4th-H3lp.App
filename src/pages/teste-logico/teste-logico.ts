@@ -36,7 +36,7 @@ export class TesteLogicoPage {
         {
           text: 'Sim',
           handler: () => {
-          this.navCtrl.push(QuestoesTestePage);
+          this.navCtrl.setRoot(QuestoesTestePage);
           }
         }
       ]

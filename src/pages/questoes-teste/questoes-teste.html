@@ -1,27 +1,36 @@
-<!--
-  Generated template for the QuestoesTestePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-      <ion-title>Teste</ion-title>
+      <ion-title text-center>Teste</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <p text-center>Responda adquadamente a segunte operação abaixo: </p>
   
-  <div> 
-      <button ion-button clear large style="width: 30%"><h3>1</h3></button>
-      <button ion-button clear large style="width: 30%">+</button>
-      <button ion-button clear large style="width: 30%">2</button>
+  <button ion-button icon-left full large color="primary" clear>
+      Time: 00:01:59s
+    </button>
+    <h1 large text-center>Arrumar aqui card 1 + 2</h1>
 
 
 
-  </div>
-
+    <ion-item>
+        <ion-label>Resposta: </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    
+      <button ion-button icon-left full color="secondary" block (click)="openPageQuiz()">
+          <ion-icon name="game-controller-b"></ion-icon>
+           Enviar
+      </button>
+      <ion-footer text-center>
+          <button ion-button large clear><ion-icon name="home" (click)='showConfirm(1)'></ion-icon></button>
+          <button ion-button large clear><ion-icon name="logo-youtube" (click)='showConfirm(2)'></ion-icon></button>
+          <button ion-button large clear><ion-icon name="game-controller-b" (click)='showConfirm(3)'></ion-icon></button>
+          <button ion-button large clear><ion-icon name="git-compare" (click)='showConfirm(4)'></ion-icon></button>
+      </ion-footer>
+      
 </ion-content>

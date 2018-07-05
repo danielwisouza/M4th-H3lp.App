@@ -39,7 +39,6 @@ export class ConfigProvider {
   }
 
   localStorage.setItem(config_key_name, JSON.stringify(config));
-
   }
 
 }

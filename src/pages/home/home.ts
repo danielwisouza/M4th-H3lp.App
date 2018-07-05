@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, IonicApp } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { TesteLogicoPage } from '../teste-logico/teste-logico';
 import { QuizPage } from '../quiz/quiz';
 import { VideoAulaPage } from '../video-aula/video-aula';
@@ -15,21 +15,21 @@ export class HomePage {
 
   }
   openPageTesteLogico() {
-    this.navCtrl.push(TesteLogicoPage);
+    this.navCtrl.setRoot(TesteLogicoPage);
   }
   openPageQuiz() {
-    this.navCtrl.push(QuizPage);
+    this.navCtrl.setRoot(QuizPage);
   }
   openPageVideoAula() {
-    this.navCtrl.push(VideoAulaPage);
+    this.navCtrl.setRoot(VideoAulaPage);
   }
   openPageSobre() {
-    this.navCtrl.push(IntoPage);
+    this.navCtrl.setRoot(IntoPage);
   }
 
   //Aqui está o botão sair
   thisClose(){
-    this.navCtrl.pop ();
+    this.navCtrl.pop();
   }
 }
 

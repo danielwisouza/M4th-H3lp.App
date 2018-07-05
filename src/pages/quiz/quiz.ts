@@ -36,7 +36,7 @@ export class QuizPage {
         {
           text: 'Sim',
           handler: () => {
-            this.navCtrl.push(QuestoesQuizPage);
+            this.navCtrl.setRoot(QuestoesQuizPage);
           }
         }
       ]
