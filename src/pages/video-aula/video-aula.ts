@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the VideoAulaPage page.
@@ -21,5 +22,7 @@ export class VideoAulaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad VideoAulaPage');
   }
-
+  openPageHome() {
+    this.navCtrl.setRoot(HomePage);
+  }
 }

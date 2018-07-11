@@ -5,14 +5,41 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>video-aula</ion-title>
-  </ion-navbar>
-
+    <ion-navbar>
+        <ion-title text-center>Vídeo Aulas</ion-title>
+        <ion-buttons left>
+          <button ion-button icon-only (click)="openPageHome()">
+            <ion-icon name="arrow-back"></ion-icon>Back
+          </button>
+        </ion-buttons>
+      </ion-navbar>
 </ion-header>
+  <ion-content class="card-background-page">
+    <ion-card>
+      <img src="../../assets/images/me_salve.jpg"/>
+      <ion-card-content>
+        <p>
+          Aqui você vai encontrar tudo que precisa pra estudar melhor! Vai ter muita dica de estudo e de motivação, além, é claro, das famosas aulas para o ENEM e para a faculdade de Engenharia! Tá esperando o quê? 
+          <strong onclick="window.open('https://www.youtube.com/user/migandorffy', '_system', 'location=yes'); return false;">Se inscreve logo!</strong>
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <img src="../../assets/images/ferrero.jpg"/>
+      <ion-card-content>
+        <p>
+          Precisando daquela força em matemática tão importante que faz toda a diferença na hora da APROVAÇÃO??<strong onclick="window.open('https://m.youtube.com/user/professorferretto', '_system', 'location=yes'); return false;">Se inscreva!</strong>
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <img src="../../assets/images/matematicaemexercicio.png"/>
+      <ion-card-content>
+        <p>
+          Cada aula possui videoaula completa de teoria, exercícios resolvidos em vídeo, e lista com exercícios propostos, onde o aluno conta com monitoria on-line para dúvidas.<strong onclick="window.open('https://www.youtube.com/channel/UCz5-HfBqc2WzfiI6PI5figA', '_system', 'location=yes'); return false;">Se inscreva!</strong>  
+        </p>
+      </ion-card-content>
+    </ion-card>
+   
+  </ion-content>
 
-
-<ion-content padding>
-
-</ion-content>

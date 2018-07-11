@@ -1,18 +1,22 @@
-<!--
-  Generated template for the TesteLogicoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>teste-logico</ion-title>
+        <ion-title text-center>Teste Lógico</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content padding>
-
+<div item-width="100%">
+  <h2>Vamos praticar as operações básicas:</h2>
+  <ion-col text-center>
+      <img src="../../assets/images/question.jpg" style="align-items: center">
+  </ion-col>
+</div>
+<button ion-button icon-left full large color="primary" block (click)='showAlert()'>
+    <ion-icon name="game-controller-b"></ion-icon>
+    Iniciar Teste
+  </button>
+  <ion-footer text-center>
+    <button ion-button large clear><ion-icon name="home" (click)='openPageHome()'></ion-icon></button>
+    <button ion-button large clear><ion-icon name="logo-youtube" (click)='openPageVideoAula()'></ion-icon></button>
+    <button ion-button large clear><ion-icon name="game-controller-b" (click)='openPageQuiz()'></ion-icon></button>
+</ion-footer>
 </ion-content>

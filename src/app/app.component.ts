@@ -2,43 +2,63 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { QuizPage } from '../pages/quiz/quiz';
+import { TesteLogicoPage } from '../pages/teste-logico/teste-logico';
+import { VideoAulaPage } from '../pages/video-aula/video-aula';
+import { IntoPage } from '../pages/into/into';
+import { ConfigProvider } from '../providers/config/config';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [
+  ConfigProvider
+] 
+  
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
-  rootPage: any = HomePage;
+  rootPage: any = IntoPage;
+  
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(
+    public platform: Platform, 
+    public statusBar: StatusBar, 
+    public splashScreen: SplashScreen,
+    public configProvider: ConfigProvider)
+  {
     this.initializeApp();
-
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
-    ];
-
   }
-
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      let config = this.configProvider.getConfigDate();
+      if (config == null){
+        this.rootPage =  IntoPage;
+        this.configProvider.setConfigDate(false);
+      }else{
+        this.rootPage = HomePage;
+      }
+      console.log(config);
+
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
   }
+  
+  openPageHome(){
+    this.nav.setRoot(HomePage);
+  }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+  openPageTesteLogico() {
+    this.nav.setRoot(TesteLogicoPage);
+  }
+  openPageQuiz() {
+    this.nav.setRoot(QuizPage);
+  }
+  openPageVideoAula() {
+    this.nav.setRoot(VideoAulaPage);
   }
 }

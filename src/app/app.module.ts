@@ -5,13 +5,15 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TesteLogicoPageModule } from '../pages/teste-logico/teste-logico.module';
 import { QuizPageModule } from '../pages/quiz/quiz.module';
-import { SobrePageModule } from '../pages/sobre/sobre.module';
 import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
+import { IntoPageModule } from '../pages/into/into.module';
+import { QuestoesQuizPageModule } from '../pages/questoes-quiz/questoes-quiz.module';
+import { QuestoesTestePageModule } from '../pages/questoes-teste/questoes-teste.module';
+import { MoovieProvider } from '../providers/moovie/moovie';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,10 @@ import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
     IonicModule.forRoot(MyApp),
     TesteLogicoPageModule,
     QuizPageModule,
-    SobrePageModule,
     VideoAulaPageModule,
+    IntoPageModule,
+    QuestoesQuizPageModule,
+    QuestoesTestePageModule,
     
   ],
   bootstrap: [IonicApp],
@@ -37,7 +41,8 @@ import { VideoAulaPageModule } from '../pages/video-aula/video-aula.module';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MoovieProvider
   ]
 })
 export class AppModule {}
