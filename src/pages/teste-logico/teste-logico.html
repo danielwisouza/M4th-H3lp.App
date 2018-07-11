@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-        <ion-title>Teste Lógico</ion-title>
+        <ion-title text-center>Teste Lógico</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
@@ -15,9 +15,8 @@
     Iniciar Teste
   </button>
   <ion-footer text-center>
-      <button ion-button large clear><ion-icon name="home" (click)='showConfirm(1)'></ion-icon></button>
-      <button ion-button large clear><ion-icon name="logo-youtube" (click)='showConfirm(2)'></ion-icon></button>
-      <button ion-button large clear><ion-icon name="game-controller-b" (click)='showConfirm(3)'></ion-icon></button>
-      <button ion-button large clear><ion-icon name="git-compare" (click)='showConfirm(4)'></ion-icon></button>
-  </ion-footer>
+    <button ion-button large clear><ion-icon name="home" (click)='openPageHome()'></ion-icon></button>
+    <button ion-button large clear><ion-icon name="logo-youtube" (click)='openPageVideoAula()'></ion-icon></button>
+    <button ion-button large clear><ion-icon name="game-controller-b" (click)='openPageQuiz()'></ion-icon></button>
+</ion-footer>
 </ion-content>

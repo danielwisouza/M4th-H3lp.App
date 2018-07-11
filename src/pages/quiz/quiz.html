@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-      <ion-title>Quiz</ion-title>
+      <ion-title text-center>Quiz</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -24,10 +24,10 @@
           <ion-icon name="game-controller-b"></ion-icon>
           Iniciar Exame
         </button>
+        
         <ion-footer text-center fixed>
-                <button ion-button large clear><ion-icon name="home" (click)='showConfirm(1)'></ion-icon></button>
-                <button ion-button large clear><ion-icon name="logo-youtube" (click)='showConfirm(2)'></ion-icon></button>
-                <button ion-button large clear><ion-icon name="game-controller-b" (click)='showConfirm(3)'></ion-icon></button>
-                <button ion-button large clear><ion-icon name="git-compare" (click)='showConfirm(4)'></ion-icon></button>
+                <button ion-button large clear><ion-icon name="home" (click)='openPageHome()'></ion-icon></button>
+                <button ion-button large clear><ion-icon name="logo-youtube" (click)='openPageVideoAula()'></ion-icon></button>
+                <button ion-button large clear><ion-icon name="game-controller-b" (click)='openPageTesteLogico()'></ion-icon></button>
         </ion-footer>
 </ion-content>
