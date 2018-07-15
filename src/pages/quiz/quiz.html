@@ -5,26 +5,21 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
       <ion-title text-center>Quiz</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content padding>
     <div item-width="100%">
         <h2>Vamos Resolver alguns Ploblemas matemáticos:</h2>
-        <ion-col text-center  class="imagem">
-            <img src="../../assets/images/cubo.png" style="align-items: center">
+        <ion-col text-center>
+            <img src="../../assets/images/cubo.png" style="align-items: center" width="100%">
         </ion-col>
       </div>
       <button ion-button icon-left full large block (click)='showConfirm()'>
           <ion-icon name="game-controller-b"></ion-icon>
           Iniciar Exame
         </button>
-        
         <ion-footer text-center fixed>
                 <button ion-button large clear><ion-icon name="home" (click)='openPageHome()'></ion-icon></button>
                 <button ion-button large clear><ion-icon name="logo-youtube" (click)='openPageVideoAula()'></ion-icon></button>

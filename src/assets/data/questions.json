@@ -1,0 +1,40 @@
+{
+	"quiz1": [
+
+		{
+			"flashCardFront": "<p> Quanto é 1/3 de 603? </p>",
+			"questionTexthelp": "Responda a questão?",
+			"answers": 38
+		},
+		{
+			"flashCardFront": "<p>Tenho 234 balas, dei 166 para meu vizinho e este distribuiu para seus amigos. Também dei 30 para meu irmão e ele comeu 27. Com quantas balas eu fiquei?</p>",
+			"questionTexthelp": "Responda a questão?",
+			"answers": 38
+		},
+		{
+			"questionText": "<p>Em uma hora, Poly ouviu 20 músicas do estilo pop e 5 músicas do estilo sertanejo. Quantas músicas sertanejas ela ouvirá em 24 horas?</p>",
+			"questionTexthelp": "Responda a questão?",
+			"answers": 180
+		}
+
+	],
+	"quiz2": [
+		
+		{
+			"flashCardFront": "<p> Quanto é 1/3 de 603? </p>",
+			"questionTexthelp": "Responda a questão?",
+			"answers": 121
+		},
+		{
+			"flashCardFront": "<p>Tenho 234 balas, dei 166 para meu vizinho e este distribuiu para seus amigos. Também dei 30 para meu irmão e ele comeu 27. Com quantas balas eu fiquei?</p>",
+			"questionTexthelp": "Responda a questão?",
+			"answers": 38
+		},
+		{
+			"questionText": "<p>Em uma hora, Poly ouviu 20 músicas do estilo pop e 5 músicas do estilo sertanejo. Quantas músicas sertanejas ela ouvirá em 24 horas?</p>",
+			"questionTexthelp": "Responda a questão?",
+			"answers": 180
+		}
+		
+		]
+}

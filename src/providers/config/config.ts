@@ -5,7 +5,7 @@ let config_key_name = "config";
 @Injectable()
 export class ConfigProvider {
 
-  private config ={
+  public config ={
     showSlide: false,
     name: "",
     username: ""

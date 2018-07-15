@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component ,ViewChild} from '@angular/core';
+import { IonicPage, NavController, NavParams} from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { VideoAulaPage } from '../video-aula/video-aula';
 import { TesteLogicoPage } from '../teste-logico/teste-logico';
 import { QuizPage } from '../quiz/quiz';
-
 
 /**
  * Generated class for the QuestoesQuizPage page.
@@ -21,10 +20,19 @@ import { QuizPage } from '../quiz/quiz';
 })
 
 export class QuestoesQuizPage {
+  @ViewChild('slides') slides: any;
+  
+  hasAnswered: boolean = false;
+  score: number = 0;
+  slideOptions: any;
+  questions: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad QuestoesQuizPage');
+    
+
+    //console.log('ionViewDidLoad QuestoesQuizPage');
+    
   }
   public dados(contagem){
     contagem=contagem+1;
@@ -52,5 +60,10 @@ export class QuestoesQuizPage {
       ]
     });
     confirm.present();
+  }
+  nextSlide(){
+    this.slides.lockSwipes(false);
+    this.slides.slideNext();
+    this.slides.lockSwipes(true);
   }
 }
